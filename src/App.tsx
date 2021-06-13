@@ -32,12 +32,14 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Detail from './components/Detail';
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+          <Route path="/detail/:id" component={Detail}></Route>
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
