@@ -7,8 +7,6 @@ import "./Water.css"
 
 
 class Tab extends Component{
-    
-    // API_URL = 'https://fhy.wra.gov.tw/WraApi/v1/Reservoir/RealTimeInfo?$top=30'
 
     state = {
         item: []
@@ -35,7 +33,7 @@ class Tab extends Component{
                                         return(
                                             
                                                 <IonButton expand="full" key={key}>
-                                                    <Link to= {`/detail/${post.StationNo}`}>
+                                                    <Link to= {`/detail/${post.StationNo}`} target="_blank">
                                                         <h2>{post.StationName}</h2>
                                                     </Link>
                                                 </IonButton>

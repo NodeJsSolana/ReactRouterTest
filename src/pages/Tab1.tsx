@@ -3,6 +3,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import Tab from '../components/tab1'
 
+
 const Tab1: React.FC = () => {
   return (
     <IonPage>
